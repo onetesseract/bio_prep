@@ -19,7 +19,7 @@ def place_n_ship(board, ships, n, a, c, m, r):
         r = (a * r + c) % m
         if r % 2 == 0:
             # horizontal
-            if x + n - 1 > 4:
+            if x + n - 1 > 9:
                 continue # out of bounds
             valid = True
             for i in range(x, x + n):
@@ -37,7 +37,7 @@ def place_n_ship(board, ships, n, a, c, m, r):
             break
         else:
             # vertical
-            if y + n - 1 > 4:
+            if y + n - 1 > 9:
                 continue # out of bounds
             valid = True
             for i in range(y, y + n):
